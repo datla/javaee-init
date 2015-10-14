@@ -1,0 +1,36 @@
+<service name="MyService" scope="application" targetNamespace="https://infantandtoddlerforum.org/">
+	<description>
+		ITFManager
+	</description>
+	
+	<!-- WSDL -->
+	<messageReceivers> 
+	
+	<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-only" 
+		class="org.apache.axis2.rpc.receivers.RPCInOnlyMessageReceiver" /> 
+	
+	<messageReceiver mep="http://www.w3.org/2004/08/wsdl/in-out" 
+		class="org.apache.axis2.rpc.receivers.RPCMessageReceiver"/>
+		 
+	</messageReceivers>
+	<!-- WSDL -->
+
+	<!-- JSON -->
+
+	<messageFormatters>
+		<messageFormatter contentType="application/json"
+			class="org.apache.axis2.json.JSONMessageFormatter" />
+	</messageFormatters>
+
+	<messageBuilders>
+		<messageBuilder contentType="application/json"
+			class="org.apache.axis2.json.JSONOMBuilder" />
+	</messageBuilders>
+
+	<!-- JSON -->
+
+	
+
+	<!-- <schema schemaNamespace="https://infantandtoddlerforum.org/xsd" />
+	<parameter name="ServiceClass">org.itf.service.ws.ITFManager</parameter> -->
+</service>
