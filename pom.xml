@@ -16,7 +16,7 @@
 		<jaxws-rt-version>2.2.8</jaxws-rt-version>
 		<jaxws-maven-plugin-version>2.3</jaxws-maven-plugin-version>
 		<jaxws-api-version>2.2.9</jaxws-api-version>
-		<java-jdk-version>1.6</java-jdk-version>
+		<java-jdk-version>1.7</java-jdk-version>
 		<maven-dependency-plugin-version>2.3</maven-dependency-plugin-version>
 		<jaxb-api-version>2.2.7</jaxb-api-version>
 	</properties>
